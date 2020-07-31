@@ -1,0 +1,231 @@
+@font-face {
+	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+	font-family: 'Open Sans';
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+	font-family: 'Open Sans';
+	font-weight: 800;
+	font-style: normal;
+}
+
+.page {
+	margin: 0;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.intro,
+.services,
+.feature,
+.team,
+.subscribe,
+.get-in-touch__body,
+.footer__content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1249px;
+	margin: 0 auto;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+.page__content {
+	flex-grow: 1;
+}
+
+h2 {
+	color: #585858;
+	/* Хотя в макете цвет текста заголовков и других элементов достигается прозрачностью, в браузере такое значение даст другой результат. Другой вариант: взять цвет в фотошопе пипеткой. */
+	margin: 0;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 42px;
+	line-height: 55px;
+	text-transform: uppercase;
+}
+
+h3 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.75;
+}
+
+.page__header_grey {
+	background-color: #e0e0e0;
+}
+
+.page__intro_grey {
+	background-color: #e0e0e0;
+}
+
+.header__line {
+	width: 122px;
+	height: 3px;
+	background-color: #ff2d2d;
+	border: none;
+}
+
+/* Header */
+.header {
+	box-sizing: border-box;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	max-width: 1249px;
+	margin: 0 auto;
+	min-height: 89px;
+	background-color: #000000;
+}
+
+.page__header {
+	padding-top: 29px;
+}
+
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	list-style: none;
+	padding: 0;
+	margin: 0;	
+	margin-left: -20px;
+	/* Сдвигать элементы можно не только позиционированием, но и отрицательными отступами. В каких случаях, что использовать читайте по ссылке https://www.smashingmagazine.com/2009/07/the-definitive-guide-to-using-negative-margins/ */
+}
+
+.menu__item {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	min-height: 89px;
+}
+
+.menu__item:hover {
+	background-color: #ff3f40;
+}
+
+.menu__link {
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+	color: #e0e0e0;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* Intro */
+.intro {
+	background-color: #e0e0e0;
+	padding-top: 103px;
+	padding-bottom: 94px;
+}
+
+.intro__content {
+	position: relative;
+    bottom: 11px;
+	width: 617px;
+	margin-bottom: 20px;
+	margin-right: 75px;
+}
+
+.intro__heading {
+	margin: 0;
+	font-size: 60px;
+	line-height: 1.2;`
+	/* Чтобы высота строки ос`тавалась пропорциональной разному размеру шрифта, можно указать ее без единиц измерения. Тогда она бужет зависеть от размера шрифта. */
+	font-weight: bold;`
+	text-transform: uppercase;
+	margin-bottom: 18px;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 800;
+	letter-spacing: 1.5px;
+	/* Свойство letter-spacing позволяет изменить межбуквенное расстояние. */
+}
+
+.intro__heading_style {
+	letter-spacing: 6px;
+	word-break: break-word;
+	hyphens: auto;
+	/* Свойство word-break заставляет слова переноситься по буквам, если они не помещаются в родительский элемент.
+	Свойство hyphens добавляет дефис в месте переноса (может работать не во всех браузерах) */
+}
+
+.intro__text {
+	max-width: 520px;
+	margin-bottom: 51px;
+	opacity: 0.7; 
+}
+
+.action-button {
+	box-sizing: border-box;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	display: inline-block;
+	width: 227px;
+	padding: 16px 0;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.action-button_red {
+	font-size: 18px;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #ff2d2d;
+}
+
+.intro__image {
+	width: 551px;
+	height: 356px;
+}
+
+.footer {
+		background-color: #2c2c2c;
+		padding: 0 1vw;
+}
+
+.footer__content {
+	box-sizing: border-box;
+	padding: 19px 0 0;
+	color: #e0e0e0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 110px;
+	background-color: #2c2c2c;
+}
